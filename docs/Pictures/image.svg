@@ -1,0 +1,15 @@
+<svg version='1.1' viewBox='-201.5 -326.5 403 403' xmlns='http://www.w3.org/2000/svg' height='400px' width='400px'>
+  <linearGradient id="topDown" x1="0" x2="0" y1='0' y2='1'>
+    <stop offset="0%" stop-color="darkgreen" />
+    <stop offset="100%" stop-color="rgb(30, 40, 30)" />
+  </linearGradient>
+  <g>
+    <ellipse rx="200" ry="75" stroke='lightgreen' fill='url(#topDown)' stroke-width='0px' />
+  </g>
+  <g rx='20'>
+    <clipPath id="clip">
+      <rect id='cont' rx='100%' ry='100%' width="700" height="400" x='-355px' y='-328px'></rect>
+    </clipPath>
+    <image href='image.png' style='height: 400px;' x='-130px' y='-328px' clip-path='url(#clip)' />
+  </g>
+</svg>

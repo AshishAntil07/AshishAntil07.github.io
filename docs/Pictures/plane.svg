@@ -1,0 +1,12 @@
+<!-- 
+  Made with sketchboard, https://boardsketch.herokuapp.com
+ -->
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="board" viewBox="312 75 580 580">
+  <polyline style="
+    fill: white;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+  "
+  points="807,177 531,525 534,675 641,544 798,615 892,75 312,407 474,474 807,177 "></polyline>
+</svg>
