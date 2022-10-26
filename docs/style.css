@@ -1,0 +1,375 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Segoe UI';
+}
+html{
+  scroll-behavior: smooth;
+}
+
+/* Main */
+
+/* loader */
+
+.loader{
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  background: rgba(211, 211, 211, .7);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  font-family: 'cascadia code';
+}
+
+
+/* navbar */
+
+.navbar{
+  background: #f5f5f5;
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 8%;padding-right: 10%;
+  color: #222;
+  height: 60px;
+  z-index: 5;
+  box-shadow: 0px 0px 5px lightgreen;
+}
+.wrapper{
+  display: flex;
+}
+.wrapper a{
+  margin: 20px;
+  color: #222;
+  user-select: none;
+  text-decoration: none;
+}
+.wrapper a::after{
+  content: '';
+  width: 0;
+  margin-left: 50%;
+  display: block;
+  height: 2px;
+  background: lightgreen;
+  transition: width .3s, margin-left .3s;
+}
+.wrapper a:hover::after{
+  width: 70%;
+  margin-left: 15%;
+}
+
+
+/* Basic Main */
+
+.page{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.container{
+  padding: 7%;
+  display: flex;
+}
+.heading{
+  font-size: 25px;
+  margin-bottom: 10px;
+  -webkit-text-stroke: green 1px;
+  display: inline-block;
+  color: dimgray;
+  font-family: 'cascadia code';
+}
+.heading::after, .heading::before{
+  content: '';
+  width: 50px;
+  height: 1px;
+  background: green;
+  display: block;
+  position: relative;
+}
+.heading::after{
+  left: calc(100% + 10px);
+  top: -15px;
+}
+.heading::before{
+  left: -60px;
+  top: 15px;
+}
+.content{
+  font-size: 17px;
+}
+.content a{
+  color: inherit;
+  display: inline-block;
+}
+span[highlight]{
+  font-weight: 500;
+  color: green;
+}
+
+
+/* Home */
+
+.greeting > div:first-child{
+  color: gray;
+  word-spacing: 5px;
+}
+.intro{
+  height: 75px;
+  width: 475px;
+  font-family: 'cascadia code';
+  font-size: 30px;
+  word-wrap: break-word;
+}
+.references{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.references a{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f5f5;
+  box-shadow: 0 0 7.5px lightgreen;
+  margin: 10px;
+  transition: transform .3s;
+}
+.references a:hover{
+  transform: scale(1.1, 1.1);
+}
+.references a img{
+  width: 75%;
+  height: 75%;
+}
+
+/* About */
+
+#about, #playmates{
+  background: rgb(30, 40, 30);
+}
+#about .container{
+  padding: 10%;
+  color: white;
+}
+#about .heading::before{
+  display: none;
+}
+.image{
+  margin-right: 50px;
+}
+.mainAbout{
+  padding-top: 20px;
+}
+
+/* languages */
+
+#playmates{
+  display: flex;
+  justify-content: center;  
+}
+#playmates .container{
+  width: 100%;
+  align-items: center;
+  flex-flow: column;
+}
+.boxes{
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.box{
+  display: flex;
+  flex-flow: column nowrap;
+  background: rgb(35, 45, 35);
+  min-height: 250px;
+  border-radius: 15px;
+  margin: 10px;
+  box-sizing: border-box;
+  padding: 20px;
+  align-items: center;
+  color: white;
+  width: 250px;
+  box-shadow: 0 0 5px 0 rgb(25, 35, 25);
+}
+div[title]{
+  font-family: consolas;
+  font-size: 20px;
+  margin: 10px;
+  font-weight: 700;
+}
+.bgImage{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, #59ff59, green)
+}
+.bgImage img{
+  width: 60%;
+  height: 60%;
+}
+#playmates .content{
+  text-align: center;
+}
+
+/* Projects */
+
+#projects .container{
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+#projects .container > div{
+  height: 205px;
+  width: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px;
+  box-shadow: 0 0 7.5px lightgreen;
+}
+#projects .container > div:first-child{
+  height: auto;
+  width: 100%;
+  margin: auto;
+  box-shadow: none;
+}
+.preview{
+  width: 100%;
+  height: calc(100% - 50px);
+}
+.preview img{
+  height: 100%;
+  width: 100%;
+}
+.bottom{
+  height: 55px;
+  display: flex;
+  background: rgb(231, 231, 231);
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 15px;padding-left: 15px;
+  flex-flow: row nowrap;
+}
+.name{
+  font-size: 18px;
+}
+.btns{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btns a{
+  height: 80%;
+  margin-right: 10px;
+  color: black;
+  text-decoration: none;
+  filter: brightness(90%);
+}
+.btns a img{
+  background: linear-gradient(to bottom right, #59ff59 50%, green);
+  padding: 5px;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+.btns a:last-child{
+  background: linear-gradient(to bottom right, #59ff59 50%, rgb(0, 167, 0));
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+.btns a:hover{
+  filter: brightness(100%);
+}
+
+/* Contact */
+
+#contact .container{
+  width: 100%;
+  justify-content: center;
+}
+.formContainer{
+  background: rgb(30, 40, 30);
+  width: 90%;
+  padding-top: 20px;
+  box-sizing: border-box;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: column nowrap;
+  border-radius: 15px;
+}
+form{
+  display: flex;
+  color: initial;
+  width: calc(100% - 40px);
+  margin-top: 20px;
+  flex-flow: column nowrap;
+  border-radius: 15px;
+  position: relative;
+  background: white;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 5px gray;
+}
+form label{
+  background: white;
+  align-self: flex-start;
+  display: flex;
+  align-items: flex-end;
+  color: gray;
+  cursor: text;
+  position: relative;
+  transform: translate(5px, calc(100% + 2px));
+  transition: font-size .3s, color .3s, transform .3s;
+}
+form input, form textarea{
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid gray;
+  outline: none;
+  transition: border .3s;
+}
+form textarea{
+  height: 150px;
+  resize: none;
+}
+form .basics{
+  display: flex;
+  justify-content: space-between;
+}
+form .basics div{
+  display: flex;
+  flex-flow: column;
+  width: 49%;
+}
+form button[type='submit']{
+  align-self: flex-end;
+  padding: 6px 25px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  color: white;
+  background: green;
+  border: none;
+  outline: none;
+}
+form button[type='submit']:disabled{
+  filter: brightness(90%);
+  cursor: not-allowed;
+}
