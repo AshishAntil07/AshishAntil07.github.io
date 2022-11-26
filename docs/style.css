@@ -23,7 +23,7 @@ html{
   justify-content: center;
   align-items: center;
   flex-flow: column;
-  font-family: 'cascadia code';
+  font-family: 'cascadia code', consolas;
 }
 
 
@@ -84,7 +84,7 @@ html{
   -webkit-text-stroke: green 1px;
   display: inline-block;
   color: dimgray;
-  font-family: 'cascadia code';
+  font-family: 'cascadia code', consolas;
 }
 .heading::after, .heading::before{
   content: '';
@@ -128,7 +128,7 @@ span[highlight]{
 .intro{
   height: 75px;
   width: 475px;
-  font-family: 'cascadia code';
+  font-family: 'cascadia code', consolas;
   font-size: 30px;
   word-wrap: break-word;
 }
@@ -158,7 +158,7 @@ span[highlight]{
 }
 
 .code{
-  font-family: 'cascadia code';
+  font-family: 'cascadia code', consolas;
   padding: 15px;
   background: rgb(241, 241, 241);
   border-radius: 10px;
