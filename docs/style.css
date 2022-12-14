@@ -252,13 +252,15 @@ div[title]{
   border-radius: 10px;
   overflow: hidden;
   margin: 10px;
-  box-shadow: 0 0 7.5px lightgreen;
+  border: 2px solid rgb(231, 231, 231);
+  /* box-shadow: 0 0 7.5px lightgreen; */
 }
 #projects .container > div:first-child{
   height: auto;
   width: 100%;
   margin: auto;
   box-shadow: none;
+  border: none;
 }
 .preview{
   width: 100%;
