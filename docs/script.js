@@ -75,8 +75,6 @@ form.querySelectorAll('label').forEach((label, index) => {
   })
 });
 
-// not actually media queries for iframe
-
 if(window.innerWidth <= 800){
   document.querySelector('iframe').contentWindow.document.documentElement.style.height = document.querySelector('iframe').contentWindow.document.documentElement.style.width = window.innerWidth<=(400+((1/5)*window.innerWidth))?((4/5)*window.innerWidth)+'px':'400px';
 }
