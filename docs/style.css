@@ -265,11 +265,11 @@ div[title]{
   border: none;
 }
 .langs{
-  padding: 15px;
+  padding: 10px;
   border-radius: 10px;
   display: flex;
   align-items: center;
-  width: fit-content;
+  width: 100px;
   background: rgb(40, 50, 40);
   box-shadow: 1px 1px 5px 0 rgb(105, 155, 105);
   transform: translate(0, 75px);
@@ -277,8 +277,8 @@ div[title]{
   position: relative;
   z-index: 1;
 }
-.langs div{
-  height: 80%;
+.langs img{
+  width: calc(100%/3 - 10px);
   margin: 5px;
 }
 .preview{
@@ -296,13 +296,15 @@ div[title]{
 .details{
   display: flex;
   flex-flow: column nowrap;
+  justify-content: space-between;
 }
 .description{
   background: rgb(40, 50, 40);
   box-shadow: 1px 1px 5px 0 rgb(105, 155, 105);
   color: white;
-  transform: translate(-75px, -70px);
+  transform: translate(-75px, -180px);
   padding: 25px;
+  position: absolute;
   border-radius: 10px;
   height: auto;
   width: 375px;
@@ -318,16 +320,16 @@ div[title]{
 .links{
   background: rgb(40, 50, 40);
   box-shadow: 1px 1px 5px 0 rgb(105, 155, 105);
-  padding: 15px;
+  padding: 10px;
   border-radius: 10px;
   width: fit-content;
   display: flex;
   align-items: center;
-  transform: translate(-50px, 0);
+  transform: translate(-50px, 95px);
 }
 .links a{
   height: 80%;
-  margin: 5px;
+  margin: 5px 10px;
   color: black;
   text-decoration: none;
   transition: transform .3s;
